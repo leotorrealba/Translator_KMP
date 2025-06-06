@@ -25,7 +25,7 @@ class KtorTranslateClient(
     ): String {
         val result = try {
             httpClient.post {
-                url("$BASE_URL/translate")
+                url("https://translate.pl-coding.com/translate")
                 contentType(ContentType.Application.Json)
                 setBody(
                     TranslateDto(

@@ -16,7 +16,7 @@ class TranslateUseCase(
     ): Resource<String> {
         return try {
             val translatedText = client.translate(
-                fromLanguage, fromText, fromLanguage
+                fromLanguage, fromText, toLanguage
             )
             historyDataSource.insertHistoryItem(
                 HistoryItem(
