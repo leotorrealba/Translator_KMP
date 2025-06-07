@@ -7,13 +7,19 @@
 //
 
 import SwiftUI
+import shared
 
 struct SmallLanguageIcon: View {
+    var language: UiLanguage
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(uiImage: UIImage(named: language.imageName.lowercased())!)
+            .resizable()
+            .frame(width: 30, height: 30)
     }
 }
 
 #Preview {
-    SmallLanguageIcon()
+    SmallLanguageIcon(
+        language: UiLanguage(language: .english, imageName: "english")
+    )
 }
