@@ -10,11 +10,8 @@ This project leverages a variety of modern technologies to deliver a seamless cr
 The core logic of the application resides in the shared Kotlin Multiplatform module, utilizing:
 - **Kotlin Coroutines**: For managing asynchronous operations.
 - **Ktor**: For making network requests to translation APIs.
-- **Apollo GraphQL**: For communication with GraphQL services (if applicable).
 - **SQLDelight**: For local database storage of translation history or saved phrases.
-- **Koin**: For dependency injection.
 - **Kotlin Serialization**: For handling JSON data.
-- **Kotlin DateTime**: For working with dates and times.
 
 ### Android App
 The Android application is built using:
