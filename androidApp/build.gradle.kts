@@ -42,6 +42,9 @@ android {
 dependencies {
     implementation(project(":shared"))
 
+    // SplashScreen
+    implementation(libs.androidx.core.splashscreen)
+
     // Compose BOM
     implementation(platform(libs.compose.bom))
 

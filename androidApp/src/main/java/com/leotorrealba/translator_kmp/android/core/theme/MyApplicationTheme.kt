@@ -1,7 +1,5 @@
 package com.leotorrealba.translator_kmp.android.core.theme
 
-
-
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme

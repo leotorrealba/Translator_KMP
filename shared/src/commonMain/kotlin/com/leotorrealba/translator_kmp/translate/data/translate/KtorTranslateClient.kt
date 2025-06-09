@@ -1,5 +1,6 @@
 package com.leotorrealba.translator_kmp.translate.data.translate
 
+import com.leotorrealba.translator_kmp.NetworkConstant.BASE_URL
 import com.leotorrealba.translator_kmp.core.domain.language.Language
 import com.leotorrealba.translator_kmp.translate.domain.translate.TranslateClient
 import com.leotorrealba.translator_kmp.translate.domain.translate.TranslateError
@@ -24,7 +25,7 @@ class KtorTranslateClient(
     ): String {
         val result = try {
             httpClient.post {
-                url("https://translate.pl-coding.com/translate")
+                url("$BASE_URL/translate")
                 contentType(ContentType.Application.Json)
                 setBody(
                     TranslateDto(
