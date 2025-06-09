@@ -16,6 +16,8 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+
+        testInstrumentationRunner = "com.leotorrealba.translator_kmp.TestHiltRunner"
     }
     buildFeatures {
         compose = true
@@ -76,10 +78,12 @@ dependencies {
     androidTestImplementation(platform(libs.compose.bom))
     testImplementation(libs.junit)
     kspAndroidTest(libs.hilt.android.compiler)
+    androidTestImplementation(libs.hilt.testing)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.compose.ui.test.junit4)
+    androidTestImplementation(libs.androidx.test.rules)
 
     // Debug
     debugImplementation(libs.compose.ui.tooling)

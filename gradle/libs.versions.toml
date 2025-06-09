@@ -33,7 +33,7 @@ hiltNavigationCompose = "1.2.0"
 
 assertK = "0.26.1"
 turbine = "0.7.0"
-rules = "1.5.0"
+androidx-test = "1.6.1"
 
 # Testing
 junit = "4.13.2"
@@ -109,6 +109,7 @@ compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
 
 
 [plugins]
