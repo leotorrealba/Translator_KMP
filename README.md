@@ -1,6 +1,7 @@
 # Translator KMP
 
-Translator KMP is a Kotlin Multiplatform Mobile application that allows users to translate text between different languages.
+Translator KMP is a Kotlin Multiplatform Mobile (KMM) application designed to provide seamless text and voice translation between various languages. Built with a shared core logic in Kotlin, it offers a consistent experience on both Android (Jetpack Compose) and iOS (SwiftUI) platforms. Key features include real-time text translation, voice-to-text input, language selection with quick swapping, and a history of past translations. The project leverages modern technologies such as Ktor for networking, SQLDelight for local data storage, and Coroutines for asynchronous operations, all structured to maximize code sharing and maintainability across platforms.
+
 
 ## Technologies Used
 
